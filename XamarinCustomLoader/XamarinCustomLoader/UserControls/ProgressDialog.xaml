@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinCustomLoader.UserControls.ProgressDialog"
+    IsVisible="{Binding IsBusy}"
+    AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition />
+        <ColumnDefinition Width="60" />
+        <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+        <RowDefinition />
+        <RowDefinition Height="60" />
+        <RowDefinition />
+    </Grid.RowDefinitions>
+
+    <WebView x:Name="Loader" Opacity="1" IsEnabled="False" Grid.Row="1" Grid.Column="1" />
+</Grid>
