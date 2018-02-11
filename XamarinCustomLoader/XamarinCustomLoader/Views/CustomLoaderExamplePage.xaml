@@ -6,9 +6,10 @@
              Title="Loader Example">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Click Here!"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Command="{Binding ButtonClicked}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
