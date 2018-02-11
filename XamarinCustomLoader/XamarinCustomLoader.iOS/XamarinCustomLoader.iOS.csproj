@@ -128,4 +128,7 @@
       <Name>XamarinCustomLoader</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\loading.gif" />
+  </ItemGroup>
 </Project>
