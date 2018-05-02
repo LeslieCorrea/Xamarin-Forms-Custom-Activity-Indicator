@@ -135,4 +135,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\loading.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\background.jpeg" />
+  </ItemGroup>
 </Project>

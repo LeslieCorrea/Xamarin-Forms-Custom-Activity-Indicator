@@ -1,15 +1,15 @@
-﻿using Xamarin.Forms;
-using MvvmHelpers;
+﻿using MvvmHelpers;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace XamarinCustomLoader.ViewModel
 {
-    public class CustomLoaderExamplePageViewModel : BaseViewModel
+    public class CustomLoaderWithBlurEffectViewModel : BaseViewModel
     {
         public ICommand ButtonClicked { get; }
 
-        public CustomLoaderExamplePageViewModel()
+        public CustomLoaderWithBlurEffectViewModel()
         {
             ButtonClicked = new Command(async () => await ShowLoader());
         }

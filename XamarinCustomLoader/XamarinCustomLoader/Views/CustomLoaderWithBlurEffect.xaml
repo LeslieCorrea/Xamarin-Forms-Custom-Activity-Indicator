@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCustomLoader.Views.CustomLoaderWithBlurEffect"
+             BackgroundColor="White"
+             Title="Loader Example With Blur Effect">
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Image  AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                Source="background" Aspect="AspectFill" />
+            <Grid
+                    IsVisible="{Binding IsBusy}"
+                    AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"
+                    BackgroundColor="#aaffffff">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="60" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <WebView x:Name="Loader" Opacity="1" IsEnabled="False" Grid.Row="1" Grid.Column="1" />
+            </Grid>
+            <StackLayout   AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <Button Text="Click Here!"
+                        IsVisible="{Binding IsNotBusy}"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        Command="{Binding ButtonClicked}" />
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -9,7 +9,7 @@ namespace XamarinCustomLoader
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new CustomLoaderExamplePage());
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()
