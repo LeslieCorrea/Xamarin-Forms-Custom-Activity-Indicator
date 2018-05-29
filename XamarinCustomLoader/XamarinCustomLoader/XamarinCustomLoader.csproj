@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Refractored.MvvmHelpers" Version="1.3.0" />
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
   </ItemGroup>
 
   <ItemGroup>
