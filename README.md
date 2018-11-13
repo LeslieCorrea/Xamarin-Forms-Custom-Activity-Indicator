@@ -12,7 +12,6 @@ Clone this repository and open [XamarinCustomLoader.sln](https://github.com/Lesl
 
 ### Built With
 * [Visual Studio Professional 2017](https://visualstudio.microsoft.com/vs/professional/) with Xamarin - IDE used
-* [Visual Studio App Center](https://appcenter.ms/) - Build Management
 
 ## Screenshots
 <p>
