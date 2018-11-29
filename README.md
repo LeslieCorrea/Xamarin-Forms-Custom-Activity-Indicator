@@ -7,7 +7,7 @@ This can be used to show custom activity indicator by using GIF images, since in
 ### Prerequisites
 [Visual Studio 2017](https://visualstudio.microsoft.com/) or [Visual Studio for Mac](https://visualstudio.microsoft.com/) with Xamarin.
 
-### Deployment
+### Development
 Clone this repository and open [XamarinCustomLoader.sln](https://github.com/LeslieCorrea/Xamarin-Forms-Custom-Activity-Indicator/blob/master/XamarinCustomLoader.sln) with Visual Studio or Visual Studio for Mac.
 
 ### Built With
